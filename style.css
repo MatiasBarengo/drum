@@ -1,0 +1,46 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Comfortaa', cursive;
+}
+
+.pads {
+    display: grid;
+    grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+    gap: 20px
+}
+
+.pad:hover {
+    cursor: pointer;
+}
+
+.pad {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 14px;
+    background: radial-gradient( ellipse at center, rgba(240, 249, 255, 1) 0%, rgba(99, 99, 99, 1) 100%);
+    transform: scale(1);
+    transition: transform 0.001s;
+}
+
+.pad:hover {
+    transform: scale(0.9);
+}
+
+kbd {
+    font-family: 'comfortaa', cursive;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.playing {
+    transform: scale(0.9);
+    background: radial-gradient( ellipse at center, rgba(240, 249, 255, 1) 0%, rgb(126, 238, 255) 100%);
+}
